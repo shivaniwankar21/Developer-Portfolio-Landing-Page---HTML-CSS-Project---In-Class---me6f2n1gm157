@@ -1,1 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
+div{
+    display: block;
+    margin: 8px;
+}
+
+.hero{
+    width: 660px;
+    height:400px;
+    margin-left:150px;
+
+}
+.box{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: 1px;
+    /* font-size: 20px; */
+    /* font-weight:bold ; */
+    height: 70px;
+    width: 715px;
+    margin-top: 10px;
+    margin-left: 95px;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* h3{
+    
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    
+} */
+.text{
+    /* font-weight: bold; */
+    font-size: 40px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+.card-container{
+    /* width: 320px; */
+    width: 250px;
+    height: auto ;
+    /* flex-direction: column; */
+    box-shadow: gray 2px 2px;
+    border-radius: 5px;
+}
+.card-image{
+    width: 100%;
+}
+.card-title{
+    padding: 8px;
+}
+.card-description{
+    padding: 10px;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.cntme{
+    height: 120px;
+    border: 1px solid black;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(55,53,47);
+}
+.abtme{
+    height: 120px;
+    border: 1px solid black;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    background-color:brown;
+   
+}
+.cntme>h3{
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+}
+
+p{
+    font-size: 8px;
+    border: none;
+    padding: 5px;
+}
+.abtme>h3{
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+}
+@media (max-width: 768px) {
+    .hero-content, .black-box-content, .bottom-content {
+        max-width: 90%;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
